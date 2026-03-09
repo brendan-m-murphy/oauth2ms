@@ -1,2 +1,0 @@
-[console_scripts]
-oauth2ms = oauth2ms.__main__:main
