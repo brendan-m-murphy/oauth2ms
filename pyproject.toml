@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oauth2ms"
+version = "0.1.0"
+description = "XOAUTH2 compatible O365 token fetcher"
+readme = {file = "README.org", content-type = "text/plain"}
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+dependencies = [
+    "pyxdg",
+    "msal",
+    "python-gnupg>=0.4.6",
+]
+
+[project.scripts]
+oauth2ms = "oauth2ms.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
